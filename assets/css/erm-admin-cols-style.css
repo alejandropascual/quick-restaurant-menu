@@ -1,0 +1,3 @@
+table .column-thumb { max-width: 90px; width: 85px; }
+table .column-thumb img { border: 1px solid #a3a3a3; }
+table td.column-shortcode { font-family: monospace; font-size: 16px; }

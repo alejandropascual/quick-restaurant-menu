@@ -1,0 +1,72 @@
+/* Menu general */
+.erm_menu:not(.type-erm_menu) { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.erm_menu:not(.type-erm_menu),
+.erm_menu:not(.type-erm_menu) ul { list-style: none !important; margin: 0!important; padding: 0!important; }
+.erm_menu:not(.type-erm_menu) li { margin-left: 0px !important;; }
+
+.erm_menu:not(.type-erm_menu) { border-top: 6px solid black; margin: 30px 0px; }
+.type-erm_menu .erm_menu { border-top: none; }
+
+
+/* Principal */
+.erm_menu .erm_title { margin-top: 5px; margin-bottom: 10px; font-family: Oswald, sans-serif; }
+.erm_menu .erm_desc { font-size: 16px; margin-bottom: 30px; font-style: italic; }
+.erm_menu .erm_footer_desc { border-top: 1px solid #dedede; font-size: 16px; margin-bottom: 10px; font-style: italic; }
+
+.erm_menu:not(.type-erm_menu) .clear {
+    float: none;
+    height: 0;
+    width: 0;
+    clear: both;
+}
+.erm_menu:not(.type-erm_menu) p { margin: 3px 0px; }
+
+/* Menu Section */
+.erm_menu .erm_section_title {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    margin: 20px 0px 5px 0px;
+    padding: 5px 0px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+.erm_menu .erm_section_desc { font-size: 16px; font-style: italic; }
+.erm_menu .erm_product + .erm_section { margin-top: 50px; }
+
+/* Menu Product */
+.erm_product { margin: 30px 0px; }
+.erm_product_image {
+    float:left; margin: 0px 10px 10px 0;
+    width: 140px; height: auto;
+}
+@media screen and (max-width: 420px) {
+    .erm_product_image { float: none; width: 100%; height: auto; }
+}
+.erm_product_title {
+    float: none; display: inline;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+.erm_product_desc { font-size: 12px;
+    padding-left: 150px;
+    color: #ababab;
+}
+@media screen and (max-width: 500px) {
+    .erm_product_desc { padding-left: 0px; }
+}
+.erm_product.no_image .erm_product_desc {
+    padding-left: 0px;
+}
+.erm_product_price {
+    /*display: inline-block; float: right;*/
+    display: block;
+    font-size: 15px;
+    text-align: right;
+    font-style: italic;
+}
+
+.erm_product_price li { display: inline-block; }
+.erm_product_price .price { display: inline-block; min-width: 50px; font-weight: bold; text-align: left; padding-left: 10px; padding-right: 15px; }
+
