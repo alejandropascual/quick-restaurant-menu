@@ -1,0 +1,389 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Restaurant Menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Thu Jan 28 2016 18:35:05 GMT+0100 (CET)\n"
+"POT-Revision-Date: Thu Jan 28 2016 18:35:19 GMT+0100 (CET)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#. Name of the plugin
+msgid "Quick Restaurant Menu"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://thingsforrestaurants.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "Create Restaurants Menus"
+msgstr ""
+
+#. Author of the plugin
+msgid "Alejandro Pascual"
+msgstr ""
+
+#: ../quick-restaurant-menu.php:83
+msgid "Clone is not allowed"
+msgstr ""
+
+#: ../quick-restaurant-menu.php:93
+msgid "Unserializing is not allowed"
+msgstr ""
+
+#: ../includes/post-types.php:19
+msgid "Menus"
+msgstr ""
+
+#: ../includes/post-types.php:20
+msgid "Menu"
+msgstr ""
+
+#: ../includes/post-types.php:21 ../includes/post-types.php:61 ../includes/post-
+#: types.php:96
+msgid "Add New"
+msgstr ""
+
+#: ../includes/post-types.php:22
+msgid "Add New Menu"
+msgstr ""
+
+#: ../includes/post-types.php:23
+msgid "Edit Menu"
+msgstr ""
+
+#: ../includes/post-types.php:24
+msgid "New Menu"
+msgstr ""
+
+#: ../includes/post-types.php:25
+msgid "All menus"
+msgstr ""
+
+#: ../includes/post-types.php:26
+msgid "View menus"
+msgstr ""
+
+#: ../includes/post-types.php:27
+msgid "Search Menus"
+msgstr ""
+
+#: ../includes/post-types.php:28
+msgid "No Menus found"
+msgstr ""
+
+#: ../includes/post-types.php:29
+msgid "No Menus found in Trash"
+msgstr ""
+
+#: ../includes/post-types.php:31
+msgid "Rest. Menus"
+msgstr ""
+
+#: ../includes/post-types.php:59 ../includes/admin/metabox.php:28
+msgid "Menu Items"
+msgstr ""
+
+#: ../includes/post-types.php:60
+msgid "Menu Item"
+msgstr ""
+
+#: ../includes/post-types.php:62
+msgid "Add New Menu Item"
+msgstr ""
+
+#: ../includes/post-types.php:63
+msgid "Edit Menu Item"
+msgstr ""
+
+#: ../includes/post-types.php:64 ../includes/admin/templates/metabox-menu-items.
+#: php:40
+msgid "New Menu Item"
+msgstr ""
+
+#: ../includes/post-types.php:65
+msgid "All Menu Items"
+msgstr ""
+
+#: ../includes/post-types.php:66
+msgid "View Menu Item"
+msgstr ""
+
+#: ../includes/post-types.php:67
+msgid "Search Menu Items"
+msgstr ""
+
+#: ../includes/post-types.php:68
+msgid "No Menu Item found"
+msgstr ""
+
+#: ../includes/post-types.php:69
+msgid "No Menu Items found in Trash"
+msgstr ""
+
+#: ../includes/post-types.php:71
+msgid "Rest. Menu Items"
+msgstr ""
+
+#: ../includes/post-types.php:94
+msgid "Weekly Menus"
+msgstr ""
+
+#: ../includes/post-types.php:95
+msgid "Weekly Menu"
+msgstr ""
+
+#: ../includes/post-types.php:97
+msgid "Add New Weekly Menu"
+msgstr ""
+
+#: ../includes/post-types.php:98
+msgid "Edit Weekly Menu"
+msgstr ""
+
+#: ../includes/post-types.php:99
+msgid "New Weekly Menu"
+msgstr ""
+
+#: ../includes/post-types.php:100
+msgid "All Weekly Menus"
+msgstr ""
+
+#: ../includes/post-types.php:101
+msgid "View Weekly Menu"
+msgstr ""
+
+#: ../includes/post-types.php:102
+msgid "Search Weekly Menus"
+msgstr ""
+
+#: ../includes/post-types.php:103
+msgid "No Weekly Menu found"
+msgstr ""
+
+#: ../includes/post-types.php:104
+msgid "No Weekly Menus found in Trash"
+msgstr ""
+
+#: ../includes/post-types.php:106
+msgid "Rest. Menus Week"
+msgstr ""
+
+#: ../includes/admin/ajax-functions.php:142
+msgid "Add Menu Items"
+msgstr ""
+
+#: ../includes/admin/functions.php:154 ../includes/admin/functions.php:172
+msgid "Sunday"
+msgstr ""
+
+#: ../includes/admin/functions.php:155 ../includes/admin/functions.php:173
+msgid "Monday"
+msgstr ""
+
+#: ../includes/admin/functions.php:156 ../includes/admin/functions.php:174
+msgid "Tuesday"
+msgstr ""
+
+#: ../includes/admin/functions.php:157 ../includes/admin/functions.php:175
+msgid "Wednesday"
+msgstr ""
+
+#: ../includes/admin/functions.php:158 ../includes/admin/functions.php:176
+msgid "Thursday"
+msgstr ""
+
+#: ../includes/admin/functions.php:159 ../includes/admin/functions.php:177
+msgid "Friday"
+msgstr ""
+
+#: ../includes/admin/functions.php:160 ../includes/admin/functions.php:178
+msgid "Saturday"
+msgstr ""
+
+#: ../includes/admin/menu-settings.php:17
+msgid "settings"
+msgstr ""
+
+#: ../includes/admin/menu-settings.php:17
+msgid "Settings"
+msgstr ""
+
+#: ../includes/admin/menu-settings.php:25
+msgid "General"
+msgstr ""
+
+#: ../includes/admin/metabox.php:29
+msgid "Footer Menu"
+msgstr ""
+
+#: ../includes/admin/metabox.php:30 ../includes/admin/metabox.php:38 ..
+#: /includes/admin/table-columns.php:67 ../includes/admin/table-columns.php:104
+msgid "Shortcode"
+msgstr ""
+
+#: ../includes/admin/metabox.php:37
+msgid "Weekly menu rules"
+msgstr ""
+
+#: ../includes/admin/metabox.php:165 ../includes/admin/metabox.php:201
+msgid "Insert this shortcode to display Menu in Front end"
+msgstr ""
+
+#: ../includes/admin/scripts.php:85
+msgid "Are you sure to delete?"
+msgstr ""
+
+#: ../includes/admin/scripts.php:86
+msgid "Yes, delete it!"
+msgstr ""
+
+#: ../includes/admin/scripts.php:167
+msgid "No Menu selected"
+msgstr ""
+
+#: ../includes/admin/settings.php:99
+msgid "Currency"
+msgstr ""
+
+#: ../includes/admin/settings.php:100
+msgid "Add this character to the price. Leave it blank if you don't want to display."
+msgstr ""
+
+#: ../includes/admin/settings.php:106
+msgid "Currency position"
+msgstr ""
+
+#: ../includes/admin/settings.php:112
+msgid "Before price"
+msgstr ""
+
+#: ../includes/admin/settings.php:113
+msgid "After price"
+msgstr ""
+
+#: ../includes/admin/settings.php:117
+msgid "Show Menu Items"
+msgstr ""
+
+#: ../includes/admin/settings.php:118
+msgid "Display the Dashboard MENU for post type \"Menu Items\""
+msgstr ""
+
+#: ../includes/admin/settings.php:124
+msgid "Menu items thumbnail size"
+msgstr ""
+
+#: ../includes/admin/settings.php:131
+msgid "Custom CSS"
+msgstr ""
+
+#: ../includes/admin/settings.php:138
+msgid "Insert Custom CSS"
+msgstr ""
+
+#: ../includes/admin/settings.php:139
+msgid "Inject the CSS in the Front End"
+msgstr ""
+
+#: ../includes/admin/settings.php:255
+msgid "Settings updated."
+msgstr ""
+
+#: ../includes/admin/settings.php:271
+#, php-format
+msgid "The callback function for setting <strong>%s</strong> is missing."
+msgstr ""
+
+#: ../includes/admin/table-columns.php:22
+msgid "Image"
+msgstr ""
+
+#: ../includes/admin/table-columns.php:41
+msgid "SECTION"
+msgstr ""
+
+#: ../includes/admin/templates/ko-modals.php:52
+msgid "Menu item"
+msgstr ""
+
+#: ../includes/admin/templates/ko-modals.php:63
+msgid "Select Image"
+msgstr ""
+
+#: ../includes/admin/templates/ko-modals.php:87
+msgid "Title"
+msgstr ""
+
+#: ../includes/admin/templates/ko-modals.php:88
+msgid "Price"
+msgstr ""
+
+#: ../includes/admin/templates/ko-modals.php:92
+msgid "Add price"
+msgstr ""
+
+#: ../includes/admin/templates/ko-modals.php:102
+msgid "Save"
+msgstr ""
+
+#: ../includes/admin/templates/ko-modals.php:103
+msgid "Cancel"
+msgstr ""
+
+#: ../includes/admin/templates/metabox-menu-items.php:41
+msgid "New Title Section"
+msgstr ""
+
+#: ../includes/admin/templates/metabox-menu-items.php:45
+msgid "Please, SAVE THIS POST to begin adding Menu Items"
+msgstr ""
+
+#: ../includes/admin/templates/metabox-menu-week.php:64
+msgid "- Create schedules and assign a menu to each of them."
+msgstr ""
+
+#: ../includes/admin/templates/metabox-menu-week.php:65
+msgid "- Insert the shortcode in any post or page."
+msgstr ""
+
+#: ../includes/admin/templates/metabox-menu-week.php:66
+msgid "- The page/post will show the first menu that satisfied the rule."
+msgstr ""
+
+#: ../includes/admin/templates/metabox-menu-week.php:68
+msgid "UTC time:"
+msgstr ""
+
+#: ../includes/admin/templates/metabox-menu-week.php:69
+msgid "LOC time:"
+msgstr ""
+
+#: ../includes/admin/templates/metabox-menu-week.php:69
+msgid "( Use local time to select the time interval. )"
+msgstr ""
+
+#: ../includes/admin/templates/metabox-menu-week.php:77
+msgid "SELECT MENU:"
+msgstr ""
+
+#: ../includes/admin/templates/metabox-menu-week.php:81
+msgid "Add schedule"
+msgstr ""
