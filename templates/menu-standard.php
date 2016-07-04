@@ -1,8 +1,10 @@
 <?php
 global $post;
-if ( !$menu_post || empty($menu_post) ) {
+if ( !isset($menu_post) || empty($menu_post) ) {
     $menu_post = get_post( $post_id );
 }
+echo '<h1>HOLA</h1>';
+//return;
 ?>
 
 <div class="erm_menu<?php echo ( $show_thumbnails ? '' : ' no-thumbs' ); ?>">
@@ -14,9 +16,10 @@ if ( !$menu_post || empty($menu_post) ) {
         if ( $post->ID != $menu_post->ID ) {
             ?>
                 <h1 class="erm_title"><?php echo $menu_post->post_title; ?></h1>
-                <div class="erm_desc"><?php echo apply_filters('the_content', $menu_post->post_content); ?></div>
+                <div class="erm_desc"><?php echo do_shortcode($menu_post->post_content); ?></div>
             <?php
         }
+    //return;
     ?>
 
 
@@ -54,20 +57,15 @@ if ( !$menu_post || empty($menu_post) ) {
                     }
                 }
             }
+
+
         ?>
     </ul>
 
     <div class="erm_footer_desc"><?php
 
         // Allow footer to have shortcodes
-        remove_filter( 'the_content', 'erm_before_menu_content' );
-        remove_filter( 'the_content', 'erm_after_menu_content' );
-
-        echo apply_filters( 'the_content', get_post_meta( $menu_post->ID, '_erm_footer_menu', true ) );
-
-        add_filter( 'the_content', 'erm_before_menu_content' );
-        add_filter( 'the_content', 'erm_after_menu_content' );
-
+        echo do_shortcode( get_post_meta( $menu_post->ID, '_erm_footer_menu', true ) );
 
     ?></div>
 

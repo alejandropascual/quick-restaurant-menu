@@ -35,7 +35,7 @@ function erm_shortcode_menu( $atts, $content = null ) {
     $show_thumbnails = $atts['thumb'] == 'yes' ? true : false;
     $price_position = $atts['price'];
 
-    if ( get_post_type( $post_id ) != 'erm_menu' ) { return; }
+    if ( get_post_type( $post_id ) != 'erm_menu' ) { return ''; }
 
     // Template
     ob_start();
