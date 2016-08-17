@@ -8,6 +8,8 @@ if ( !isset($menu_post) || empty($menu_post) ) {
 <div class="erm_menu<?php echo ( $show_thumbnails ? '' : ' no-thumbs' ) . ' post-id-' . $menu_post->ID . ' ' . $menu_post->post_name; ?>" id="<?php echo 'post-id-' . $menu_post->ID; ?>">
 
     <?php
+        do_action( 'erm_menu_before_header', $menu_post->ID );
+
         // If it's the erm_menu post then we don't show this
         // because this is for shortcode only
         global $post;
@@ -16,6 +18,9 @@ if ( !isset($menu_post) || empty($menu_post) ) {
                 <h1 class="erm_title"><?php echo $menu_post->post_title; ?></h1>
                 <div class="erm_desc"><?php echo do_shortcode($menu_post->post_content); ?></div>
             <?php
+
+        do_action( 'erm_menu_after_header', $menu_post->ID );
+
         }
     //return;
     ?>
@@ -23,6 +28,8 @@ if ( !isset($menu_post) || empty($menu_post) ) {
 
     <ul class="erm_menu_content">
         <?php
+
+            do_action( 'erm_menu_before_content', $menu_post->ID );
 
             // Thumb size
             $option_thumb_size = ERM()->settings->get('erm_menu_thumb_size');
@@ -56,6 +63,7 @@ if ( !isset($menu_post) || empty($menu_post) ) {
                 }
             }
 
+            do_action( 'erm_menu_after_content', $menu_post->ID );
 
         ?>
     </ul>
@@ -64,6 +72,8 @@ if ( !isset($menu_post) || empty($menu_post) ) {
 
         // Allow footer to have shortcodes
         echo do_shortcode( get_post_meta( $menu_post->ID, '_erm_footer_menu', true ) );
+
+        do_action( 'erm_menu_footer', $menu_post->ID );
 
     ?></div>
 
