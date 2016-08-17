@@ -3,8 +3,6 @@ global $post;
 if ( !isset($menu_post) || empty($menu_post) ) {
     $menu_post = get_post( $post_id );
 }
-echo '<h1>HOLA</h1>';
-//return;
 ?>
 
 <div class="erm_menu<?php echo ( $show_thumbnails ? '' : ' no-thumbs' ); ?>">
