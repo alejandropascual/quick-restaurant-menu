@@ -191,10 +191,12 @@ fieldset {
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
+/*
 legend {
   border: 0;
   padding: 0;
 }
+*/
 textarea {
   overflow: auto;
 }
@@ -1418,7 +1420,7 @@ fieldset {
   margin: 0;
   border: 0;
   min-width: 0;
-}
+}/*
 legend {
   display: block;
   width: 100%;
@@ -1430,12 +1432,15 @@ legend {
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
+*/
+/*
 label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
 }
+*/
 input[type="search"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3214,9 +3219,9 @@ tbody.collapse.in {
   background-color: transparent;
   border: 0;
 }
-.hidden {
+/*.hidden {
   display: none !important;
-}
+}*/
 .affix {
   position: fixed;
 }

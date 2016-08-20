@@ -247,6 +247,8 @@ jQuery(document).ready(function($){
 
         self.save = function(){
 
+            console.log('Saving erm_update_menu_item');
+
             //if ( self.requesting ) { self.requesting.abort(); }
 
             self.spin(true);
@@ -273,12 +275,12 @@ jQuery(document).ready(function($){
             });
         };
 
-        setTimeout( function(){
-            self.content.subscribe( self.save );
-            self.image_id.subscribe( self.save );
-            self.visible.subscribe( self.save );
-            self.title.subscribe( self.save );
-        }, 100);
+        //setTimeout( function(){
+        //    self.content.subscribe( self.save );
+        //    self.image_id.subscribe( self.save );
+        //    self.visible.subscribe( self.save );
+        //    self.title.subscribe( self.save );
+        //}, 100);
 
         // Popup editor - new
         self.popup_editor = function(){
