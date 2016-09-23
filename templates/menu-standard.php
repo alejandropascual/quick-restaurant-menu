@@ -5,7 +5,7 @@ if ( !isset($menu_post) || empty($menu_post) ) {
 }
 ?>
 
-<div class="erm_menu<?php echo ( $show_thumbnails ? '' : ' no-thumbs' ); ?>">
+<div class="erm_menu<?php echo ( $show_thumbnails ? '' : ' no-thumbs' ); ?> <?php echo 'erm_menu-id-'.$menu_post->ID; ?>" id="erm_menu-id-<?php echo $menu_post->ID; ?>">
 
     <?php
         // If it's the erm_menu post then we don't show this

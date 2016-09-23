@@ -3,7 +3,7 @@ Contributors: AlejandroPascual
 Donate link: http://thingsforrestaurants.com
 Plugin URL: http://thingsforrestaurants.com
 Requires at Least: 3.5
-Tested Up To: 4.6
+Tested Up To: 4.6.1
 Tags: menu, restaurant, restaurant menu, food, drink, dining, cafe, coffee, cuisine
 Stable tag: 1.5.5
 License: GPLv2 or later
@@ -127,6 +127,8 @@ You can use the support tab here, or visit the [plugin website](http://thingsfor
 == Changelog ==
 
 = 1.5.5 =
+* Added new class to menu
+* Added ID to menu
 * Fixed bug with screen options button
 * Fixed bug when saving creating new menu item
 * Product description allows shortcodes
