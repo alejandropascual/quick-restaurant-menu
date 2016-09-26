@@ -204,6 +204,7 @@ jQuery(document).ready(function($){
         });
         self.toggle_visible = function(){
             self.visible( !self.visible() );
+            self.save();
         };
 
         // Edit content

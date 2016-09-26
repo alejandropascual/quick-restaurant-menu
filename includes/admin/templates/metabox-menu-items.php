@@ -18,7 +18,7 @@
                     </td>
                     <td style="width:120px;">
                         <div class="edit-icons">
-                            <i class="fa" data-bind="css: visible_css, click: toggle_visible"></i>
+                            <i class="fa" data-bind="visible: !is_section(), css: visible_css, click: toggle_visible"></i>
                             <!-- i class="fa" data-bind="css: editing_css, click: toggle_editing"></i -->
                             <i class="fa" data-bind="css: editing_css, click: popup_editor"></i>
                             <i class="fa fa-remove" data-bind="click: $parent.removeitem"></i>

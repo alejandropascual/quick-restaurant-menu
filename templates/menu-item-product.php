@@ -1,3 +1,8 @@
+<?php
+$visible = get_post_meta( $item_id, '_erm_visible', true );
+if ( !$visible ) return;
+?>
+
 <?php $has_thumbnail = has_post_thumbnail( $item_id ); ?>
 
 <li class="erm_product <?php echo ( ($has_thumbnail && $show_thumbnails) ? 'with_image' : 'no_image'); ?>">
