@@ -248,7 +248,7 @@ jQuery(document).ready(function($){
 
         self.save = function(){
 
-            console.log('Saving erm_update_menu_item');
+            //console.log('Saving erm_update_menu_item');
 
             //if ( self.requesting ) { self.requesting.abort(); }
 

@@ -32,13 +32,17 @@ function erm_setup_post_types() {
     ));
 
     $slug           = defined('ERM_MENU_SLUG') ? ERM_MENU_SLUG : 'qr_menu';
+    $new_slug = ERM()->settings->get('erm_menu_slug');
+    if ( strlen($new_slug) >= 3 && $new_slug != $slug ) {
+        $slug = $new_slug;
+    }
     $has_archive    = defined('ERM_MENU_HAS_ARCHIVE') && ERM_MENU_HAS_ARCHIVE ? true : false;
     $rewrite        = defined('ERM_DISABLE_REWRITE') && ERM_DISABLE_REWRITE ? false : array('slug'=>$slug, 'with_front'=>false);
 
     $args_menu = array(
         'labels'            => $labels_menu,
         'public'            => true,
-        'publicly_queryable'=> true,
+        //'publicly_queryable'=> true,
         'show_ui' 			=> true,
         'show_in_menu' 		=> true,
         'query_var' 		=> true,
@@ -73,16 +77,17 @@ function erm_setup_post_types() {
 
     $args_menu_item = array(
         'labels'            => $labels_menu_item,
-        //'public'            => ERM()->settings->get('erm_show_dashboard_menu_items') == 1 ? true : false,
+        //'show_ui'            => ERM()->settings->get('erm_show_dashboard_menu_items') == 1 ? true : false,
+        'show_ui'           => true,
         'public'            => true,
-        'publicly_queryable'=> false,
-        'query_var' 		=> false,
-        'rewrite' 			=> false,
+        //'publicly_queryable'=> true,
+        'query_var' 		=> true,
+        //'rewrite' 			=> false,
         'capabilities'      => array('create_posts'=>false),
         'map_meta_cap'      => true, // true to edit/delete
-        'has_archive' 		=> false,
+        'has_archive' 		=> true,
         'hierarchical' 		=> false,
-        'show_in_menu' => 'edit.php?post_type=erm_menu',
+        'show_in_menu'      => 'edit.php?post_type=erm_menu',
         'supports'          => apply_filters( 'erm_menu_item_supports', array( 'title', 'editor', 'thumbnail', 'revisions', 'author' ) )
     );
     if( version_compare( $wp_version, '3.8-RC', '>=' ) || version_compare( $wp_version, '3.8', '>=' ) ) {

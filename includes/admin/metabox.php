@@ -162,7 +162,7 @@ function erm_render_shortcode_meta_box() {
     global $post;
 
     $sc = '[erm_menu id='.$post->ID.']';
-    echo '<p>'.__('Insert this shortcode in other posts to display Menu in Front end','erm').'</p>';
+    echo '<p>'.__('Use this shortcode for displaying the menu in other pages','erm').'</p>';
     echo '<div style="background-color: #F1F1F1;padding: 10px;font-size: 20px;">'; print_r( $sc ); echo '</div>';
 }
 
@@ -198,6 +198,6 @@ function erm_render_menu_week_shortcode_meta_box(){
     global $post;
 
     $sc = '[erm_menu_week id='.$post->ID.']';
-    echo '<p>'.__('Insert this shortcode to display Menu in Front end','erm').'</p>';
+    echo '<p>'.__('Use this shortcode for displaying the menu in other pages','erm').'</p>';
     echo '<div style="background-color: #F1F1F1;padding: 10px;font-size: 16px;">'; print_r( $sc ); echo '</div>';
 }

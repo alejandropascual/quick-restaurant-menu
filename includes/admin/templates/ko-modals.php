@@ -72,15 +72,15 @@
 
                         <div class="" data-bind="css: {'col-xs-9': type=='product', 'col-xs-12': type=='section'}">
                             <div class="form-group">
-                                <label>Title:</label>
+                                <label><?php _ex('Title','modal window','erm'); ?></label>
                                 <input type="text" class="form-control" data-bind="value: title">
                             </div>
                             <div class="form-group">
-                                <label>Description:</label>
+                                <label><?php _ex('Description','modal window', 'erm'); ?></label>
                                 <textarea class="form-control" id="modalCkeditor" data-bind="ckEditor: content"></textarea>
                             </div>
                             <div class="form-group" data-bind="visible: type=='product'">
-                                <label>Prices:</label>
+                                <label><?php _ex('Prices','modal window', 'erm'); ?></label>
                                 <div class="edit-prices" data-bind="sortable: {data:prices, options:{axis:'y', handle:'.icon-move-price'}}">
                                     <div class="item-price">
                                         <i class="icon-move-price fa fa-bars"></i>

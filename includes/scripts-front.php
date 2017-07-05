@@ -25,7 +25,7 @@ function erm_load_scripts() {
 
     if ( has_shortcode( $post->post_content, 'erm_menu') || has_shortcode( $post->post_content, 'erm_menu_week') || get_post_type( $post ) == 'erm_menu' ) {
 
-        wp_enqueue_style( 'font-oswald', 'http://fonts.googleapis.com/css?family=Oswald:400,700' );
+        wp_enqueue_style( 'font-oswald', '//fonts.googleapis.com/css?family=Oswald:400,700' );
         wp_enqueue_style( 'magnific-popup', $css_dir.'magnific-popup.css' );
         wp_enqueue_style( 'erm-front', $css_dir.'erm-front.css' , array(), ERM_VERSION );
 

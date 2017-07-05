@@ -3,18 +3,22 @@ Contributors: AlejandroPascual
 Donate link: http://thingsforrestaurants.com
 Plugin URL: http://thingsforrestaurants.com
 Requires at Least: 3.5
-Tested Up To: 4.6.1
+Tested Up To: 4.8
 Tags: menu, restaurant, restaurant menu, food, drink, dining, cafe, coffee, cuisine
-Stable tag: 1.6.0
+Stable tag: 1.6.5
 License: GPLv2 or later
 
 Create easily restaurant menus with drag and drop. Display different menus for each day of the week and for different hours in the same day.
 
 == Description ==
 
+>[Quick Restaurant Menu](https://thingsforrestaurants.com/downloads/quick-restaurant-menu-plugin/?utm_medium=link&utm_campaign=free&utm_source=wordpress.org) allows you to create quickly menus for eateries, cafes, bars and restaurants. You can include images, descriptions, sizes and images.
+
+
 [youtube https://www.youtube.com/watch?v=PgOD55Q6OTU]
 
-Quick Restaurant Menu allows you to create quickly menus for eateries, cafes, bars and restaurants. You can include images, descriptions, sizes and images.
+
+= Quick Restaurant Menu Features =
 
 Display **different menus for each day of the week** and also **for different hours in the same day**. Suppose for example you want to display a menu for lunch and another one for diner, then depending on the hour the visitor access your website it will show a different menu.
 
@@ -28,6 +32,28 @@ The plugin uses default WordPress functionality. Creates two new post types, Men
 * Variable menu depending on the week day and the hour
 * Drag and drop interface
 * Insert custom CSS
+
+= PRO Features =
+
+* Not only Section, organize your menu with Rows & Columns
+* Powerful Drag & Drop builder
+* Copy / clone menu items from inside the menu
+* Add menu items on the fly from a searchable list
+* Add list with prices with title, normal price and sale price
+* Add nutrition facts and diet tags to each menu item
+* Display with different layouts: expanded, dropdown, horizontal tabbed, vertical tabbed
+* Lightbox with pictures
+* Popup with menu item details
+* Each menu item has it’s own page and is searchable
+* Share your menu items in facebook, google-plus, twitter, pinterest and linkedin
+* Customize your menus with lots of options
+* Select colors and font families
+* Image resolution and size
+* Images with subtle shadow
+* Font size, line heights and margins
+
+Make sure to review the [PRO version of Quick Restaurant Menu](https://thingsforrestaurants.com/downloads/quick-restaurant-menu-pro/?utm_medium=link&utm_campaign=free&utm_source=wordpress.org) page for more detailed information.
+
 
 = How to use =
 
@@ -54,6 +80,7 @@ You can also define thumb and price attributes in the shortcode:
 = Translations =
 
 * Spanish (Español)
+
 
 == Installation ==
 
@@ -126,8 +153,14 @@ You can use the support tab here, or visit the [plugin website](http://thingsfor
 
 == Changelog ==
 
+= 1.6.5 =
+* New setting: optional rewrite menu slug from qr_menu
+* Admin modal window ready for translation
+* Google fonts url changed to //
+
 = 1.6.0 =
 * Fixed menu item visible bug
+* Menu item is searchable and has it's own page
 
 = 1.5.5 =
 * Added new class to menu

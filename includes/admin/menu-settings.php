@@ -14,8 +14,17 @@
  */
 function erm_register_menu_settings() {
 
-   add_submenu_page('edit.php?post_type=erm_menu', __('settings','erm'), __('Settings','erm'), 'manage_options', ERM_SETTINGS, 'erm_display_menu_settings' );
+    $hook = add_submenu_page('edit.php?post_type=erm_menu', __('settings','erm'), __('Settings','erm'), 'manage_options', ERM_SETTINGS, 'erm_display_menu_settings' );
+    add_action('load-'.$hook,'erm_settings_saved');
 }
+
+function erm_settings_saved(){
+    if(isset($_GET['settings-updated']) && $_GET['settings-updated'])
+    {
+        flush_rewrite_rules(false);
+    }
+}
+
 add_action( 'admin_menu', 'erm_register_menu_settings' );
 
 function erm_display_menu_settings() {
@@ -38,9 +47,14 @@ function erm_display_menu_settings() {
 
     ob_start();
     ?>
+        <?php do_action('erm_before_settings_page'); ?>
+
         <div class="wrap">
             <h2 class="nav-tab-wrapper">
                 <?php
+
+
+
                     foreach( $tabs as $tab_id => $tab_data ) {
 
                         // Tab with one section
@@ -125,5 +139,8 @@ function erm_display_menu_settings() {
 
         </div>
     <?php
+
+    do_action('erm_after_settings_page');
+
     echo ob_get_clean();
 }

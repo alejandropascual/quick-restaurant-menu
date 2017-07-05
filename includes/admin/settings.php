@@ -24,6 +24,9 @@ class ERM_Settings {
         $this->set_name = $name;
         $this->options = get_option( $this->set_name, array() );
         add_action( 'admin_init', array( $this, 'register_settings') );
+
+        //$hook = add_menu_page('My Plugin Settings','My Plugin Settings','manage_options','my_plugin_settings','display_plugin_options');
+        //add_action('load-'.$hook,'do_on_my_plugin_settings_save');
     }
 
     public function register_settings() {
@@ -95,6 +98,13 @@ class ERM_Settings {
         $list = array(
             'general' => apply_filters( 'erm_settings_general', // Tab general
                 array(
+                    'erm_menu_slug' => array(
+                        'name' => __( 'Menu slug', 'erm' ),
+                        'desc' => __( 'Use this for changing the slug for the menu Custom Post Type. By default is qr_menu.' , 'erm' ),
+                        'type' => 'text',
+                        'size' => 'medium',
+                        'std' => 'qr_menu'
+                    ),
                     'erm_currency' => array(
                         'name' => __( 'Currency', 'erm' ),
                         'desc' => __( 'Add this character to the price. Leave it blank if you don\'t want to display.' , 'erm' ),

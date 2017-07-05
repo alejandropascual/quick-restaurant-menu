@@ -5,7 +5,7 @@
  * Description: Create Restaurants Menus
  * Author: Alejandro Pascual
  * Author URI: http://thingsforrestaurants.com
- * Version: 1.6.0
+ * Version: 1.6.5
  * Text Domain: erm
  * Domain Path: languages
  *
@@ -127,7 +127,7 @@ if ( ! class_exists( 'El_Restaurant_Menu' ) ) :
 
             // Version
             if ( ! defined( 'ERM_VERSION' ) ) {
-                define( 'ERM_VERSION', '1.0.0' );
+                define( 'ERM_VERSION', '1.6.5' );
             }
 
             // Name for Setting
@@ -158,6 +158,8 @@ if ( ! class_exists( 'El_Restaurant_Menu' ) ) :
                 require_once ERM_PLUGIN_DIR . 'includes/admin/scripts.php';
                 require_once ERM_PLUGIN_DIR . 'includes/admin/ajax-functions.php';
                 require_once ERM_PLUGIN_DIR . 'includes/admin/actions.php';
+                require_once ERM_PLUGIN_DIR . 'includes/admin/thanks-for-using.php';
+                require_once ERM_PLUGIN_DIR . 'includes/admin/menu-settings.php';
                 require_once ERM_PLUGIN_DIR . 'includes/admin/menu-settings.php';
                 require_once ERM_PLUGIN_DIR . 'includes/admin/table-columns.php';
             }
