@@ -1,8 +1,8 @@
 /* Menu general */
 .erm_menu:not(.type-erm_menu) { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 .erm_menu:not(.type-erm_menu),
-.erm_menu:not(.type-erm_menu) ul { list-style: none !important; margin: 0!important; padding: 0!important; }
-.erm_menu:not(.type-erm_menu) li { margin-left: 0px !important;; }
+.erm_menu:not(.type-erm_menu) ul { margin: 0!important; padding: 0!important; }
+.erm_menu:not(.type-erm_menu) li { margin-left: 0px !important; list-style: none; }
 
 .erm_menu:not(.type-erm_menu) { border-top: 6px solid black; margin: 30px 0px; }
 .type-erm_menu .erm_menu { border-top: none; }
