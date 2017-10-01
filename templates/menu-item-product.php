@@ -1,3 +1,9 @@
+<?php
+$visible = get_post_meta( $item_id, '_erm_visible', true );
+$prices = get_post_meta( $item_id, '_erm_prices', true );
+if ( !$visible ) return;
+?>
+
 <?php $has_thumbnail = has_post_thumbnail( $item_id ); ?>
 
 <li class="erm_product <?php echo ( ($has_thumbnail && $show_thumbnails) ? 'with_image' : 'no_image'); ?>">
@@ -24,22 +30,17 @@
     }
     ?>
 
-    <h3 class="erm_product_title"><?php echo $the_post->post_title; ?></h3>
+    <h3 class="erm_product_title"><?php echo $the_post->post_title;?>
+        
+        <!-- Display Price next to name of item instead of in another span.  Removed logic to check if the price should be displayed on top or bottom-->
+        <?php foreach( $prices as $price ) { ?>
+                    
+        <?php echo apply_filters('erm_filter_price', $price['value']); ?>
+            <?php } ?>
+    </h3>
 
     <?php
-
-    if ( $price_position == 'top' ) {
-
-        include 'menu-item-product-price.php';
         include 'menu-item-product-desc.php';
-
-    } else if ( $price_position == 'bottom' ) {
-
-        include 'menu-item-product-desc.php';
-        include 'menu-item-product-price.php';
-
-    }
-
     ?>
 
     <div class="clear"></div>
