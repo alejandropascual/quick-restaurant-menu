@@ -70,3 +70,12 @@
 .erm_product_price li { display: inline-block; }
 .erm_product_price .price { display: inline-block; min-width: 50px; font-weight: bold; text-align: left; padding-left: 10px; padding-right: 15px; }
 
+
+.erm_menu.price_inline .erm_product_title {
+    display: inline-block;
+}
+.erm_menu.price_inline .erm_product_price {
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+}

@@ -3,9 +3,9 @@ Contributors: AlejandroPascual
 Donate link: http://thingsforrestaurants.com
 Plugin URL: http://thingsforrestaurants.com
 Requires at Least: 3.5
-Tested Up To: 4.8
+Tested Up To: 5.1.1
 Tags: menu, restaurant, restaurant menu, food, drink, dining, cafe, coffee, cuisine
-Stable tag: 1.6.5
+Stable tag: 1.7.0
 License: GPLv2 or later
 
 Create easily restaurant menus with drag and drop. Display different menus for each day of the week and for different hours in the same day.
@@ -79,7 +79,8 @@ You can also define thumb and price attributes in the shortcode:
 
 = Translations =
 
-* Spanish (Español)
+* Spanish ( Español )
+* Norwegian ( Thanks to [Ole Petter Holthe-Berg](https://trollheimendesign.no/) )
 
 
 == Installation ==
@@ -152,6 +153,16 @@ You can use the support tab here, or visit the [plugin website](http://thingsfor
 6. Variable menu interface
 
 == Changelog ==
+
+= 1.7.0 =
+* Menu items new loop
+* New hooks added to the menu template
+* Menu items does not have a front-end template
+* Small fixes
+
+
+= 1.6.6 =
+Added new translation to Norwegian
 
 = 1.6.5 =
 * New setting: optional rewrite menu slug from qr_menu

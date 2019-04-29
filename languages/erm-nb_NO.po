@@ -1,0 +1,424 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Restaurant Menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-05 16:23+0000\n"
+"POT-Revision-Date: Thu Jan 28 2016 18:35:19 GMT+0100 (CET)\n"
+"PO-Revision-Date: 2018-11-15 01:50+0100\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: nb\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: quick-restaurant-menu.php:84
+msgid "Clone is not allowed"
+msgstr "Klon er ikke tillatt"
+
+#: quick-restaurant-menu.php:94
+msgid "Unserializing is not allowed"
+msgstr "Unserialisering er ikke tillatt"
+
+#: _pruebas/basic-information.php:7
+msgid "Basic Information"
+msgstr "Grunnleggende informasjon"
+
+#. Name of the plugin
+#: _pruebas/basic-information.php:17
+msgid "Quick Restaurant Menu"
+msgstr "Quick Restaurant Menu"
+
+#: _pruebas/basic-information.php:18
+msgid "The easiest way to create the menu for your Restaurant"
+msgstr "Den enkleste måten å opprette matmeny for din restaurant"
+
+#: _pruebas/basic-information.php:21 _pruebas/basic-information.php:37
+msgid "For Modern User Interaction"
+msgstr "For moderne bruker interaksjon"
+
+#: _pruebas/basic-information.php:24 _pruebas/basic-information.php:40
+msgid "Login"
+msgstr "Logg inn"
+
+#: _pruebas/basic-information.php:25 _pruebas/basic-information.php:41
+#, php-format
+msgid "Friction-less login using %s shortcode or a widget."
+msgstr "Friksjonsløs login ved bruk av %s kortkode eller widget."
+
+#: _pruebas/basic-information.php:28 _pruebas/basic-information.php:44
+msgid "Registration"
+msgstr "Registrering"
+
+#: _pruebas/basic-information.php:29 _pruebas/basic-information.php:45
+#, php-format
+msgid "Beautiful registration forms fully customizable using the %s shortcode."
+msgstr ""
+"Vakre registreringsskjemaer kan tilpasses fullt ut ved hjelp av %s kortkoden."
+
+#: _pruebas/basic-information.php:32 _pruebas/basic-information.php:48
+msgid "Edit Profile"
+msgstr "Endre profil"
+
+#: _pruebas/basic-information.php:33 _pruebas/basic-information.php:49
+#, php-format
+msgid "Straight forward edit profile forms using %s shortcode."
+msgstr "Rediger profilskjemaer med %s shortcode på en enkel måte."
+
+#: includes/post-types.php:21 includes/post-types.php:22
+msgid "Add New Menu"
+msgstr "Legg til ny meny"
+
+#: includes/post-types.php:23
+msgid "Edit Menu"
+msgstr "Endre meny"
+
+#: includes/post-types.php:24
+msgid "New Menu"
+msgstr "Ny meny"
+
+#: includes/post-types.php:25
+msgid "All Menus"
+msgstr "Alle menyer"
+
+#: includes/post-types.php:26
+msgid "View Menus"
+msgstr "Vis menyer"
+
+#: includes/post-types.php:27
+msgid "Search Menus"
+msgstr "Søk etter menyer"
+
+#: includes/post-types.php:28
+msgid "No Menus found"
+msgstr "Ingen menyer funnet"
+
+#: includes/post-types.php:29
+msgid "No Menus found in Trash"
+msgstr "Ingen menyer funnet i søppelkurv"
+
+#: includes/post-types.php:65 includes/post-types.php:103
+msgid "Add New"
+msgstr "Legg til ny"
+
+#: includes/post-types.php:66
+msgid "Add New Menu Item"
+msgstr "Legg til ny matrett"
+
+#: includes/post-types.php:67
+msgid "Edit Menu Item"
+msgstr "Endre matrett"
+
+#: includes/post-types.php:68
+#: includes/admin/templates/metabox-menu-items.php:40
+msgid "New Menu Item"
+msgstr "Ny matrett"
+
+#: includes/post-types.php:69
+msgid "All Menu Items"
+msgstr "Alle matretter"
+
+#: includes/post-types.php:70
+msgid "View Menu Item"
+msgstr "Vis matrett"
+
+#: includes/post-types.php:71
+msgid "Search Menu Items"
+msgstr "Søk etter matretter"
+
+#: includes/post-types.php:72
+msgid "No Menu Item found"
+msgstr "Ingen matretter funnet"
+
+#: includes/post-types.php:73
+msgid "No Menu Items found in Trash"
+msgstr "Ingen matretter finnet i søppelkurv"
+
+#: includes/post-types.php:75
+msgid "Rest. Menu Items"
+msgstr "Matretter"
+
+#: includes/post-types.php:104
+msgid "Add New Weekly Menu"
+msgstr "Legg til ny ukentlig meny"
+
+#: includes/post-types.php:105
+msgid "Edit Weekly Menu"
+msgstr "Endre ny ukentlig meny"
+
+#: includes/post-types.php:106
+msgid "New Weekly Menu"
+msgstr "Ny ukentlig meny"
+
+#: includes/post-types.php:107
+msgid "All Weekly Menus"
+msgstr "Alle ukentlige menyer"
+
+#: includes/post-types.php:108
+msgid "View Weekly Menu"
+msgstr "Vis ukentlig meny"
+
+#: includes/post-types.php:109
+msgid "Search Weekly Menus"
+msgstr "Søk etter ukentlige menyer"
+
+#: includes/post-types.php:110
+msgid "No Weekly Menu found"
+msgstr "Ingen ukentlige menyer funnet"
+
+#: includes/post-types.php:111
+msgid "No Weekly Menus found in Trash"
+msgstr "Ingen ukentlige menyer funnet i søppelkurv"
+
+#: includes/post-types.php:113
+msgid "Rest. Menus Week"
+msgstr "Menyer uke"
+
+#: includes/admin/ajax-functions.php:143
+msgid "Add Menu Items"
+msgstr "Legg til matrett"
+
+#: includes/admin/functions.php:154 includes/admin/functions.php:172
+msgid "Sunday"
+msgstr "Søndag"
+
+#: includes/admin/functions.php:155 includes/admin/functions.php:173
+msgid "Monday"
+msgstr "Mandag"
+
+#: includes/admin/functions.php:156 includes/admin/functions.php:174
+msgid "Tuesday"
+msgstr "Tirsdag"
+
+#: includes/admin/functions.php:157 includes/admin/functions.php:175
+msgid "Wednesday"
+msgstr "Onsdag"
+
+#: includes/admin/functions.php:158 includes/admin/functions.php:176
+msgid "Thursday"
+msgstr "Torsdag"
+
+#: includes/admin/functions.php:159 includes/admin/functions.php:177
+msgid "Friday"
+msgstr "Fredag"
+
+#: includes/admin/functions.php:160 includes/admin/functions.php:178
+msgid "Saturday"
+msgstr "Lørdag"
+
+#: includes/admin/menu-settings.php:17
+msgid "settings"
+msgstr "Innstillinger"
+
+#: includes/admin/menu-settings.php:17
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: includes/admin/menu-settings.php:34
+msgid "General"
+msgstr "Generelt"
+
+#: includes/admin/metabox.php:28
+msgid "Menu Items"
+msgstr "Matretter"
+
+#: includes/admin/metabox.php:29
+msgid "Footer Menu"
+msgstr "Bunntekst"
+
+#: includes/admin/metabox.php:37
+msgid "Weekly menu rules"
+msgstr "Ukentlig meny regler"
+
+#: includes/admin/metabox.php:38 includes/admin/table-columns.php:67
+#: includes/admin/table-columns.php:104
+msgid "Shortcode"
+msgstr "Kortkode"
+
+#: includes/admin/metabox.php:165 includes/admin/metabox.php:201
+msgid "Use this shortcode for displaying the menu in other pages"
+msgstr "Bruk denne kortkoden for å vise menyen i andre sider"
+
+#: includes/admin/scripts.php:86
+msgid "Are you sure to delete?"
+msgstr "Er du sikker på du vil slette denne matretten?"
+
+#: includes/admin/scripts.php:87
+msgid "Yes, delete it!"
+msgstr "Ja, slett!"
+
+#: includes/admin/scripts.php:167
+msgid "No Menu selected"
+msgstr "Ingen meny valgt"
+
+#: includes/admin/settings.php:102
+msgid "Menu slug"
+msgstr "Meny slug"
+
+#: includes/admin/settings.php:103
+msgid ""
+"Use this for changing the slug for the menu Custom Post Type. By default is "
+"qr_menu."
+msgstr ""
+"Bruk denne for for å endre sluggen i nettadressen. Standard er qr_menu."
+
+#: includes/admin/settings.php:109
+msgid "Currency"
+msgstr "Valuta"
+
+#: includes/admin/settings.php:110
+msgid ""
+"Add this character to the price. Leave it blank if you don't want to display."
+msgstr ""
+"Legg til denne karakteren til prisen. La det være tomt hvis du ikke vil vise."
+
+#: includes/admin/settings.php:116
+msgid "Currency position"
+msgstr "Valutaposisjon"
+
+#: includes/admin/settings.php:122
+msgid "Before price"
+msgstr "Før pris"
+
+#: includes/admin/settings.php:123
+msgid "After price"
+msgstr "Etter pris"
+
+#: includes/admin/settings.php:134
+msgid "Menu items thumbnail size"
+msgstr "Matretter thumbnail størrelse"
+
+#: includes/admin/settings.php:141
+msgid "Custom CSS"
+msgstr "Egendefinert CSS"
+
+#: includes/admin/settings.php:148
+msgid "Insert Custom CSS"
+msgstr "Sett inn egendefinert CSS"
+
+#: includes/admin/settings.php:149
+msgid "Inject the CSS in the Front End"
+msgstr "Sett inn CSS i Front End"
+
+#: includes/admin/settings.php:265
+msgid "Settings updated."
+msgstr "Innstillinger oppdatert."
+
+#: includes/admin/settings.php:281
+#, php-format
+msgid "The callback function for setting <strong>%s</strong> is missing."
+msgstr "Callbackfunksjonen for innstillingen <strong>%s</strong> mangler."
+
+#: includes/admin/table-columns.php:22
+msgid "Image"
+msgstr "Bilde"
+
+#: includes/admin/table-columns.php:41
+msgid "SECTION"
+msgstr "SEKSJON"
+
+#: includes/admin/templates/ko-modals.php:52
+msgid "Menu item"
+msgstr "Matrett"
+
+#: includes/admin/templates/ko-modals.php:63
+msgid "Select Image"
+msgstr "Velg bilde"
+
+#: includes/admin/templates/ko-modals.php:75
+msgctxt "modal window"
+msgid "Title"
+msgstr "Tittel"
+
+#: includes/admin/templates/ko-modals.php:79
+msgctxt "modal window"
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: includes/admin/templates/ko-modals.php:83
+msgctxt "modal window"
+msgid "Prices"
+msgstr "Priser"
+
+#: includes/admin/templates/ko-modals.php:87
+msgid "Title"
+msgstr "Tittel"
+
+#: includes/admin/templates/ko-modals.php:88
+msgid "Price"
+msgstr "Pris"
+
+#: includes/admin/templates/ko-modals.php:92
+msgid "Add price"
+msgstr "Legg til pris"
+
+#: includes/admin/templates/ko-modals.php:102
+msgid "Save"
+msgstr "Lagre"
+
+#: includes/admin/templates/ko-modals.php:103
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: includes/admin/templates/metabox-menu-items.php:41
+msgid "New Title Section"
+msgstr "Ny seksjon (tittel)"
+
+#: includes/admin/templates/metabox-menu-items.php:45
+msgid "Please, SAVE THIS POST to begin adding Menu Items"
+msgstr "Vennligst LAGRE DENNE POSTEN for å starte å legge til matretter"
+
+#: includes/admin/templates/metabox-menu-week.php:64
+msgid "- Create schedules and assign a menu to each of them."
+msgstr "- Lag tidsplaner og tilordne en meny til hver av dem."
+
+#: includes/admin/templates/metabox-menu-week.php:65
+msgid "- Insert the shortcode in any post or page."
+msgstr "- Sett inn kortkoden i et innlegg eller en side."
+
+#: includes/admin/templates/metabox-menu-week.php:66
+msgid "- The page/post will show the first menu that satisfied the rule."
+msgstr ""
+"- Siden / innlegget viser den første menyen som tilfredsstilte regelen."
+
+#: includes/admin/templates/metabox-menu-week.php:68
+msgid "UTC time:"
+msgstr "UTC tid:"
+
+#: includes/admin/templates/metabox-menu-week.php:69
+msgid "LOC time:"
+msgstr "LOC tid:"
+
+#: includes/admin/templates/metabox-menu-week.php:69
+msgid "( Use local time to select the time interval. )"
+msgstr "( Bruk lokal tid til å velge tidsintervallen. )"
+
+#: includes/admin/templates/metabox-menu-week.php:77
+msgid "SELECT MENU:"
+msgstr "VELG MENY:"
+
+#: includes/admin/templates/metabox-menu-week.php:81
+msgid "Add schedule"
+msgstr "Legg til planlegging"
+
+#. Description of the plugin
+msgid "Create Restaurants Menus"
+msgstr "Opprett restaurantmenyer"
+
+#. URI of the plugin
+msgid "http://thingsforrestaurants.com"
+msgstr "http://thingsforrestaurants.com"
+
+#. Author of the plugin
+msgid "Alejandro Pascual"
+msgstr "Alejandro Pascual"

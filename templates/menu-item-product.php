@@ -11,6 +11,7 @@ if ( !$visible ) return;
     if ( $has_thumbnail && $show_thumbnails ) {
 
         $image_id = get_post_thumbnail_id( $item_id );
+
         $src_thumb = erm_get_image_src( $image_id, $option_thumb_size );
         $src_full = erm_get_image_src( $image_id, 'full' );
         $alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
@@ -18,9 +19,12 @@ if ( !$visible ) return;
         $caption = $post_image->post_excerpt;
         $desc = $post_image->post_content;
 
-        echo '<a class="image-popup" target="_blank" href="'.$src_full.'" data-caption="'.esc_attr($caption).'" data-desc="'.esc_attr($desc).'">
+
+        $html_image =  '<a class="image-popup" target="_blank" href="'.$src_full.'" data-caption="'.esc_attr($caption).'" data-desc="'.esc_attr($desc).'">
                 <img class="erm_product_image" alt="'.esc_attr($alt).'" src="'.$src_thumb.'">
               </a>';
+
+        echo apply_filters( 'erm_menu_item_image_display', $html_image, $item_id );
 
     } else {
 
@@ -29,7 +33,7 @@ if ( !$visible ) return;
     }
     ?>
 
-    <h3 class="erm_product_title"><?php echo $the_post->post_title; ?></h3>
+    <h3 class="erm_product_title"><?php the_title() ?></h3>
 
     <?php
 

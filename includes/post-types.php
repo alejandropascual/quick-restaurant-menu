@@ -79,13 +79,13 @@ function erm_setup_post_types() {
         'labels'            => $labels_menu_item,
         //'show_ui'            => ERM()->settings->get('erm_show_dashboard_menu_items') == 1 ? true : false,
         'show_ui'           => true,
-        'public'            => true,
+        'public'            => false,
         //'publicly_queryable'=> true,
         'query_var' 		=> true,
         //'rewrite' 			=> false,
         'capabilities'      => array('create_posts'=>false),
         'map_meta_cap'      => true, // true to edit/delete
-        'has_archive' 		=> true,
+        'has_archive' 		=> false,
         'hierarchical' 		=> false,
         'show_in_menu'      => 'edit.php?post_type=erm_menu',
         'supports'          => apply_filters( 'erm_menu_item_supports', array( 'title', 'editor', 'thumbnail', 'revisions', 'author' ) )

@@ -19,7 +19,7 @@ class APS_Plugin {
         }
     }
 
-    private function show_deactivation_feddback_modal() {
+    private function aps_show_deativation_feedback_modal() {
 
         require $this->templates_dir . 'deactivate-feedback-modal.php';
 

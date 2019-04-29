@@ -3,9 +3,9 @@
  * Plugin Name: Quick Restaurant Menu
  * Plugin URI: http://thingsforrestaurants.com
  * Description: Create Restaurants Menus
- * Author: Alejandro Pascual
+ * Author: ThingsForRestaurants
  * Author URI: http://thingsforrestaurants.com
- * Version: 1.6.5
+ * Version: 1.7.0
  * Text Domain: erm
  * Domain Path: languages
  *
@@ -25,7 +25,7 @@
  * @package ERM
  * @category Core
  * @author Alejandro Pascual
- * @version 1.5.5
+ * @version 1.7.0
  */
 
 // Exit if accessed directly
@@ -127,7 +127,7 @@ if ( ! class_exists( 'El_Restaurant_Menu' ) ) :
 
             // Version
             if ( ! defined( 'ERM_VERSION' ) ) {
-                define( 'ERM_VERSION', '1.6.5' );
+                define( 'ERM_VERSION', '1.7.0' );
             }
 
             // Name for Setting
@@ -162,6 +162,9 @@ if ( ! class_exists( 'El_Restaurant_Menu' ) ) :
                 require_once ERM_PLUGIN_DIR . 'includes/admin/menu-settings.php';
                 require_once ERM_PLUGIN_DIR . 'includes/admin/menu-settings.php';
                 require_once ERM_PLUGIN_DIR . 'includes/admin/table-columns.php';
+
+                //require_once ERM_PLUGIN_DIR . 'includes/admin/qrr-upsell.php';
+                //new QRR_Upsell('qrm-free');
             }
         }
 

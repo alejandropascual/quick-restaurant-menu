@@ -28,12 +28,14 @@ function erm_shortcode_menu( $atts, $content = null ) {
     $atts = shortcode_atts( array(
         'id' 	        => $post_id,
         'thumb'         => 'yes',
-        'price'         => 'top'
-    ), $atts, 'erm_menu' );
+        'price'         => 'top',
+        'price_inline'  => 'no'
+    ), $atts );
 
-    $post_id = $atts['id']; // I need only this for the template
+    $post_id = $atts['id']; // I only need this for the template
     $show_thumbnails = $atts['thumb'] == 'yes' ? true : false;
     $price_position = $atts['price'];
+    $price_inline = $atts['price_inline'] == 'yes' ? true : false;
 
     if ( get_post_type( $post_id ) != 'erm_menu' ) { return ''; }
 
