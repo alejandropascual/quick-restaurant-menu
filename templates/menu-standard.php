@@ -1,5 +1,10 @@
 <?php
+/*
 
+I nned a reservation plugin. We have 3 restaurants with different timings and different emails. I need a single form which should contain all 3 restaurants with drag and drop. when we select one restaurant the timings for restaurant we have given should be displayed and for anotherteh same. And custom admin and customer emails should be send from the different emails for each restaurant.
+Please revert me asap
+
+*/
 // Template called from the post view and from the shortcode
 
 global $post;
