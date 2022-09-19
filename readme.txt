@@ -14,9 +14,7 @@ Create easily restaurant menus with drag and drop. Display different menus for e
 
 >[Quick Restaurant Menu](https://thingsforrestaurants.com/downloads/quick-restaurant-menu-plugin/?utm_medium=link&utm_campaign=free&utm_source=wordpress.org) allows you to create quickly menus for eateries, cafes, bars and restaurants. You can include images, descriptions, sizes and images.
 
-
 [youtube https://www.youtube.com/watch?v=PgOD55Q6OTU]
-
 
 = Quick Restaurant Menu Features =
 
