@@ -11,11 +11,11 @@
 }
 .erm_menu_item {
     position: relative;
-    background: #E6E6E6;
     padding: 0px 10px 0px 10px;
-    border: 1px solid white;
-    margin: 0px 0px;
+    border: 1px solid #cecece;
+    margin: 2px 0px;
     border-radius: 0px;
+    border-radius: 100px;
 }
 .erm_menu_item.section { margin-top: 20px; }
 .erm_menu_item:last-child { margin-bottom: 30px; }
@@ -56,7 +56,10 @@
 }
 
 .erm_menu_item .src_thumb {
-    height: 70px; width: auto; padding-top: 2px;
+    height: 60px;
+    width: auto;
+    padding-top: 0px;
+    border-radius: 100px;
 }
 .erm_menu_item .title {
     display: inline-block;
@@ -125,7 +128,7 @@
 
 /* Product or Section */
 
-.erm_menu_item.section { background: #CECECE; }
+.erm_menu_item.section { background: #c1e6f9; }
 .erm_menu_item.section .title { font-weight: bolder; }
 .erm_menu_item.section .src_thumb { display: none; }
 .erm_menu_item.section .edit-image { display: none !important; }
@@ -162,7 +165,7 @@
     height: 40px;
     overflow: hidden;
     width: 100%;
-    padding: 0px 30px 4px 30px;
+    padding: 0px 30px 4px 5px;
     color: #a7a7a7;
 }
 .erm_menu_item .prices {

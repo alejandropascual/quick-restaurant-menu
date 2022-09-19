@@ -5,7 +5,7 @@
  * Description: Create Restaurants Menus
  * Author: ThingsForRestaurants
  * Author URI: http://thingsforrestaurants.com
- * Version: 1.7.0
+ * Version: 1.7.1
  * Text Domain: erm
  * Domain Path: languages
  *
@@ -25,21 +25,21 @@
  * @package ERM
  * @category Core
  * @author Alejandro Pascual
- * @version 1.7.0
+ * @version 1.7.1
  */
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 
-if ( ! class_exists( 'El_Restaurant_Menu' ) ) :
+if ( ! class_exists( 'Quick_Restaurant_Menu' ) ) :
 
     /**
      * Main Class. Singleton
      *
      * @since 1.0
      */
-    final class El_Restaurant_Menu {
+    final class Quick_Restaurant_Menu{
 
         /**
          * @var object
@@ -61,9 +61,9 @@ if ( ! class_exists( 'El_Restaurant_Menu' ) ) :
          */
         public static function singleton() {
 
-            if ( !isset( self::$singleton ) && !( self::$singleton instanceof El_Restaurant_Menu ) ) {
+            if ( !isset( self::$singleton ) && !( self::$singleton instanceof Quick_Restaurant_Menu ) ) {
 
-                self::$singleton = new El_Restaurant_Menu;
+                self::$singleton = new Quick_Restaurant_Menu;
                 self::$singleton->init();
                 self::$singleton->setup_constants();
                 add_action( 'plugins_loaded', array(self::$singleton, 'load_textdomain' ) );
@@ -127,7 +127,7 @@ if ( ! class_exists( 'El_Restaurant_Menu' ) ) :
 
             // Version
             if ( ! defined( 'ERM_VERSION' ) ) {
-                define( 'ERM_VERSION', '1.7.0' );
+                define( 'ERM_VERSION', '1.7.1' );
             }
 
             // Name for Setting
@@ -188,7 +188,7 @@ endif; // End if
  * @return the singleton object Easy_Restaurant_Menu
  */
 function ERM() {
-    return El_Restaurant_Menu::singleton();
+    return Quick_Restaurant_Menu::singleton();
 }
 
 // Create singleton

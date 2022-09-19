@@ -37,8 +37,8 @@
         </div>
     </div>
     <div data-bind="if: post_created()">
-        <button class="button button-default button-large" data-bind="click: newitem_product"><?php _e('New Menu Item','erm')?></button>
-        <button class="button button-default button-large" data-bind="click: newitem_section"><?php _e('New Title Section','erm')?></button>
+        <button class="button button-default button-large button-primary" data-bind="click: newitem_product"><?php _e('New Menu Item','erm')?></button>
+        <button class="button button-default button-large button-primary" data-bind="click: newitem_section"><?php _e('New Title Section','erm')?></button>
         <!-- a class="button button-default button-large" data-bind="click: add_menuitem"><?php //_e('Add Menu Item','erm')?></a -->
     </div>
     <div data-bind="if: !post_created()">

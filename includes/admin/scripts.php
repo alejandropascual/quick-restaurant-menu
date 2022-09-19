@@ -57,6 +57,11 @@ function erm_load_admin_scripts( $hook ) {
         wp_enqueue_script( 'ckeditor', $lib_dir.'ckeditor2/ckeditor.js', array('jquery'), '2.0.0', true );
         wp_enqueue_script( 'jq-ckeditor', $lib_dir.'ckeditor2/adapters/jquery.js', array('ckeditor'), '2.0.0', true );
 
+        // TRIX editor
+        //wp_enqueue_style( 'trix.css', $css_dir.'trix/trix.css' );
+        //wp_enqueue_script( 'trix', $lib_dir.'trix/trix.js', array(), '1.3.1', true );
+
+
         // Knockout
         wp_enqueue_script( 'knockout', $js_dir.'knockout.min.js', array('jquery'), '3.3.0', true );
         wp_enqueue_script( 'knockout-sortable', $js_dir.'knockout-sortable'.$suffix.'.js', array('knockout'), '0.11.0', true );
