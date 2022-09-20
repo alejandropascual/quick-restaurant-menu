@@ -3,9 +3,9 @@ Contributors: AlejandroPascual
 Donate link: http://thingsforrestaurants.com
 Plugin URL: http://thingsforrestaurants.com
 Requires at Least: 3.5
-Tested Up To: 5.8
+Tested Up To: 6.0.2
 Tags: menu, restaurant, restaurant menu, food, drink, dining, cafe, coffee, cuisine
-Stable tag: 1.7.1
+Stable tag: 2.0.0
 License: GPLv2 or later
 
 Create easily restaurant menus with drag and drop. Display different menus for each day of the week and for different hours in the same day.
@@ -151,6 +151,10 @@ You can use the support tab here, or visit the [plugin website](http://thingsfor
 6. Variable menu interface
 
 == Changelog ==
+
+= 2.0.0 =
+* Updated menu builder interface
+* Updated to WP last version
 
 = 1.7.1 =
 * Small fixes at the backend editor

@@ -66,7 +66,7 @@ function erm_display_menu_list( $post_id ) {
     $show_thumbnails = true;
     $price_position = 'top';
 
-    include ERM_PLUGIN_DIR . 'templates/menu-standard.php';
+    include ERM_PLUGIN_DIR . 'templates/menu.php';
 }
 
 add_action( 'erm_after_menu_content', 'erm_display_menu_list' );

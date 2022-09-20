@@ -1,25 +1,25 @@
 <?php
 
 function erm_get_purchase_link( $url = '', $campaign = 'free' ) {
-    if ( $url == '' ) {
-        $url = 'https://thingsforrestaurants.com/downloads/quick-restaurant-menu-pro/';
-    }
-    $url = add_query_arg( array( 'utm_medium' => 'link', 'utm_campaign' => $campaign, 'utm_source' => urlencode( home_url() ) ), $url );
-    return apply_filters( 'erm_get_purchase_link', esc_url_raw( $url ) );
+	if ( $url == '' ) {
+		$url = 'https://thingsforrestaurants.com/downloads/quick-restaurant-menu-pro/';
+	}
+	$url = add_query_arg( array( 'utm_medium' => 'link', 'utm_campaign' => $campaign, 'utm_source' => urlencode( home_url() ) ), $url );
+	return apply_filters( 'erm_get_purchase_link', esc_url_raw( $url ) );
 }
 
 
 add_action('erm_before_settings_page', 'erm_before_settings_page');
 
 function erm_before_settings_page() {
-    ?>
+	?>
 
-    <div class="about-wrap">
-        <h1>Thanks for using <a href="https://thingsforrestaurants.com/downloads/quick-restaurant-menu-plugin/">Quick Restaurant Menu</a>!</h1>
-        <div class="about-text">The future of <a href="https://thingsforrestaurants.com/downloads/quick-restaurant-menu-plugin-pro/">Quick Restaurant Menu</a> relies on happy customers supporting ThingsForRestaurants by purchasing upgraded versions. If you like this free version of QRM please consider <a href="<?php echo erm_get_purchase_link(); ?>">purchasing the PRO version</a>.</div>
-    </div>
+	<div class="about-wrap">
+		<h1>Thanks for using <a href="https://thingsforrestaurants.com/downloads/quick-restaurant-menu-plugin/">Quick Restaurant Menu</a>!</h1>
+		<div class="about-text">The future of <a href="https://thingsforrestaurants.com/downloads/quick-restaurant-menu-plugin-pro/">Quick Restaurant Menu</a> relies on happy customers supporting ThingsForRestaurants by purchasing upgraded versions. If you like this free version of QRM please consider <a href="<?php echo erm_get_purchase_link(); ?>">purchasing the PRO version</a>.</div>
+	</div>
 
-    <style>
+	<style>
         .about-wrap .notice,
         .about-wrap div.error,
         .about-wrap div.updated,
@@ -49,7 +49,7 @@ function erm_before_settings_page() {
             line-height: 1.6em;
             font-size: 19px;
         }
-    </style>
+	</style>
 
-    <?php
+	<?php
 }

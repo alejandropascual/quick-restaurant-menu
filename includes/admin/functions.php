@@ -4,7 +4,7 @@
  *
  * @package     ERM
  * @subpackage  Admin
- * @copyright   Copyright (c) 2015, Alejandro Pascual
+ * @copyright   Copyright (c) 2022, Alejandro Pascual
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  * @since       1.0
  */
@@ -19,9 +19,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * @return bool
  */
 function erm_is_admin_editing_erm_menu() {
-    global $pagenow, $typenow;
-    $ret = ( 'erm_menu' == $typenow && ( 'post.php' ==  $pagenow || 'post-new.php' == $pagenow ) );
-    return (bool) apply_filters( 'erm_is_admin_editing_erm_menu', $ret );
+	global $pagenow, $typenow;
+	$ret = ( 'erm_menu' == $typenow && ( 'post.php' ==  $pagenow || 'post-new.php' == $pagenow ) );
+	return (bool) apply_filters( 'erm_is_admin_editing_erm_menu', $ret );
 }
 
 /**
@@ -31,9 +31,9 @@ function erm_is_admin_editing_erm_menu() {
  * @return bool
  */
 function erm_is_admin_editing_erm_menu_week() {
-    global $pagenow, $typenow;
-    $ret = ( 'erm_menu_week' == $typenow && ( 'post.php' ==  $pagenow || 'post-new.php' == $pagenow ) );
-    return (bool) apply_filters( 'erm_is_admin_editing_erm_menu_week', $ret );
+	global $pagenow, $typenow;
+	$ret = ( 'erm_menu_week' == $typenow && ( 'post.php' ==  $pagenow || 'post-new.php' == $pagenow ) );
+	return (bool) apply_filters( 'erm_is_admin_editing_erm_menu_week', $ret );
 }
 
 
@@ -47,24 +47,27 @@ function erm_is_admin_editing_erm_menu_week() {
  */
 function erm_get_menu_items_data( $post_id ) {
 
-    // Get meta
-    $menu_items = get_post_meta( $post_id, '_erm_menu_items', true );
-    if ( empty($menu_items) ) return array();
+	// Get meta
+	$menu_items = get_post_meta( $post_id, '_erm_menu_items', true );
+	if ( empty($menu_items) ) return array();
 
-    // Split to get ids
-    $menu_items = preg_split('/,/', $menu_items);
+	// Split to get ids
+	$menu_items = preg_split('/,/', $menu_items);
 
-    // Array to return
-    $result = array();
+	// Array to return
+	$result = array();
 
-    // Get data foreach menu item id
-    foreach( $menu_items as $id ) {
+	// Get data foreach menu item id
+	foreach( $menu_items as $id ) {
 
-        $data = erm_get_menu_item_data( $id );
-        if ( ! empty($data) )
-            $result[] = $data;
-    }
-    return $result;
+		$data = erm_get_menu_item_data( $id );
+
+		if ( ! empty($data) ) {
+			$result[] = $data;
+		}
+
+	}
+	return $result;
 }
 
 /**
@@ -76,49 +79,49 @@ function erm_get_menu_items_data( $post_id ) {
  */
 function erm_get_menu_item_data( $id ) {
 
-    $post = get_post( $id );
+	$post = get_post( $id );
 
-    if ( $post && get_post_type($id) == 'erm_menu_item' ) {
+	if ( $post && get_post_type($id) == 'erm_menu_item' ) {
 
-        $visible = get_post_meta( $id, '_erm_visible', true );
+		$visible = get_post_meta( $id, '_erm_visible', true );
 
-        if ( has_post_thumbnail( $id ) ) {
-            $thumbnail_id = get_post_thumbnail_id($id);
-            $image_src_thumb = wp_get_attachment_image_src( $thumbnail_id );
-            $image_src_thumb = isset($image_src_thumb[0]) ? $image_src_thumb[0] : '';
-            $image_src_big = wp_get_attachment_image_src( $thumbnail_id, 'full');
-            $image_src_big = isset($image_src_big[0]) ? $image_src_big[0] : '';
-            $post_image = get_post($thumbnail_id);
-            $image_title = $post_image->post_excerpt;
-            $image_desc = $post_image->post_content;
-        } else {
-            $thumbnail_id = 0;
-            $image_src_thumb = '';
-            $image_src_big = '';
-            $image_title = '';
-            $image_desc = '';
-        }
+		if ( has_post_thumbnail( $id ) ) {
+			$thumbnail_id = get_post_thumbnail_id($id);
+			$image_src_thumb = wp_get_attachment_image_src( $thumbnail_id );
+			$image_src_thumb = isset($image_src_thumb[0]) ? $image_src_thumb[0] : '';
+			$image_src_big = wp_get_attachment_image_src( $thumbnail_id, 'full');
+			$image_src_big = isset($image_src_big[0]) ? $image_src_big[0] : '';
+			$post_image = get_post($thumbnail_id);
+			$image_title = $post_image->post_excerpt;
+			$image_desc = $post_image->post_content;
+		} else {
+			$thumbnail_id = 0;
+			$image_src_thumb = '';
+			$image_src_big = '';
+			$image_title = '';
+			$image_desc = '';
+		}
 
-        $prices = get_post_meta($id, '_erm_prices', true);
-        if (!$prices) $prices = array();
+		$prices = get_post_meta($id, '_erm_prices', true);
+		if (!$prices) $prices = array();
 
-        return array(
-            'id'            => intval($id),
-            'type'          => get_post_meta( $id, '_erm_type', true ),
-            'visible'       => $visible ? 1 : 0,
-            'title'         => $post->post_title,
-            'content'       => $post->post_content,
-            'image_id'      => intval($thumbnail_id),
-            'src_thumb'     => $image_src_thumb,
-            'src_big'       => $image_src_big,
-            'image_title'   => $image_title,
-            'image_desc'    => $image_desc,
-            'prices'        => $prices,
-            'link'          => get_edit_post_link( $id )
-        );
-    }
+		return array(
+			'id'            => intval($id),
+			'type'          => get_post_meta( $id, '_erm_type', true ),
+			'visible'       => $visible ? 1 : 0,
+			'title'         => $post->post_title,
+			'content'       => $post->post_content,
+			'image_id'      => intval($thumbnail_id),
+			'src_thumb'     => $image_src_thumb,
+			'src_big'       => $image_src_big,
+			'image_title'   => $image_title,
+			'image_desc'    => $image_desc,
+			'prices'        => $prices,
+			'link'          => get_edit_post_link( $id )
+		);
+	}
 
-    return array();
+	return array();
 }
 
 /**
@@ -128,18 +131,18 @@ function erm_get_menu_item_data( $id ) {
  * @return mixed|void
  */
 function erm_get_list_menus() {
-    $posts = get_posts(array(
-       'post_type' => 'erm_menu',
-        'posts_per_page' => -1
-    ));
-    $result = array();
-    foreach( $posts as $post ) {
-        $result[] = array(
-            'id' => $post->ID,
-            'title' => $post->post_title
-        );
-    }
-    return apply_filters( 'erm_get_list_menus', $result );
+	$posts = get_posts(array(
+		'post_type' => 'erm_menu',
+		'posts_per_page' => -1
+	));
+	$result = array();
+	foreach( $posts as $post ) {
+		$result[] = array(
+			'id' => $post->ID,
+			'title' => $post->post_title
+		);
+	}
+	return apply_filters( 'erm_get_list_menus', $result );
 }
 
 /**
@@ -149,34 +152,34 @@ function erm_get_list_menus() {
  * @return mixed|void
  */
 function erm_get_week_days_ordered() {
-    $start_day = intval( get_option('start_of_week') );
-    $days = array(
-        __('Sunday','erm'),
-        __('Monday','erm'),
-        __('Tuesday','erm'),
-        __('Wednesday','erm'),
-        __('Thursday','erm'),
-        __('Friday','erm'),
-        __('Saturday','erm'),
-    );
-    if ($start_day>0) {
-        for ($i=1;$i<=$start_day;$i++){
-            array_push($days,array_shift($days));
-        }
-    }
-    return apply_filters('erm_get_week_days_ordered',$days);
+	$start_day = intval( get_option('start_of_week') );
+	$days = array(
+		__('Sunday','erm'),
+		__('Monday','erm'),
+		__('Tuesday','erm'),
+		__('Wednesday','erm'),
+		__('Thursday','erm'),
+		__('Friday','erm'),
+		__('Saturday','erm'),
+	);
+	if ($start_day>0) {
+		for ($i=1;$i<=$start_day;$i++){
+			array_push($days,array_shift($days));
+		}
+	}
+	return apply_filters('erm_get_week_days_ordered',$days);
 }
 
 function erm_get_week_days_english() {
-    return array(
-        __('Sunday','erm'),
-        __('Monday','erm'),
-        __('Tuesday','erm'),
-        __('Wednesday','erm'),
-        __('Thursday','erm'),
-        __('Friday','erm'),
-        __('Saturday','erm'),
-    );
+	return array(
+		__('Sunday','erm'),
+		__('Monday','erm'),
+		__('Tuesday','erm'),
+		__('Wednesday','erm'),
+		__('Thursday','erm'),
+		__('Friday','erm'),
+		__('Saturday','erm'),
+	);
 }
 
 
