@@ -8,8 +8,8 @@ if ( !isset($menu_post) || empty($menu_post) ) {
 
 ?>
 
-<div class="erm_menu <?php echo 'erm_menu-id-'.$menu_post->ID; ?>"
-     id="erm_menu-id-<?php echo $menu_post->ID; ?>"
+<div class="erm_menu <?php echo esc_attr('erm_menu-id-'.$menu_post->ID); ?>"
+     id="erm_menu-id-<?php echo esc_attr($menu_post->ID); ?>"
 >
     <?php
     // HEADER -------------------------------------

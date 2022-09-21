@@ -12,9 +12,11 @@ mix.webpackConfig({
 mix
     .js('src/main.js', './../assets/js/erm_menu')
     .vue({version: 3})
-    .sourceMaps()
-    .extract()
+    //.sourceMaps()
+    //.extract()
+    //.minify('./../assets/js/erm_menu/main.js')
     .setPublicPath('./../assets/js/erm_menu')
+
     .postCss('src/style.css', './../assets/js/erm_menu', [postcssImport(), tailwindcss('tailwind.config.cjs'),])
     .alias({'@': path.join(__dirname, 'src/')})
-    .version()
+    //.version()

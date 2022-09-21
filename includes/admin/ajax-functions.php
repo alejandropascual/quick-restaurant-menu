@@ -31,7 +31,7 @@ function erm_update_menu_item() {
 			'ID'            => $post_id,
 			'post_title'    => $title,
 			'post_name'     => $title,
-			'post_content'  => $_POST['content'],
+			'post_content'  => wp_kses_post($_POST['content']),
 		));
 
 		update_post_meta( $post_id, '_erm_visible', ($visible == 'true' || $visible == 1) ? true : false );

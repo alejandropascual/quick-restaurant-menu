@@ -22,7 +22,3 @@ $erm_vars = array(
 <div id="app"></div>
 <div id="modal"></div>
 
-<script type="module" crossorigin src="<?php echo $js_dir.'erm_menu/manifest.js'; ?>"></script>
-<script type="module" crossorigin src="<?php echo $js_dir.'erm_menu/vendor.js'; ?>"></script>
-<script type="module" crossorigin src="<?php echo $js_dir.'erm_menu/main.js'; ?>"></script>
-<link rel="stylesheet" href="<?php echo $js_dir.'erm_menu/style.css'; ?>">

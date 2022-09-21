@@ -124,11 +124,11 @@ import Modal from "./components/Modal.vue"
 import Card from "./components/Card.vue"
 import CreateUpdateMenuItem from "./components/CreateUpdateMenuItem.vue"
 import AreYourSure from "./components/AreYourSure.vue";
-
+import TinyMceEditor from "./components/TinyMceEditor.vue";
 export default {
   components: {
     AreYourSure,
-    Modal, Card, CreateUpdateMenuItem,
+    Modal, Card, CreateUpdateMenuItem
   },
 
   data() {

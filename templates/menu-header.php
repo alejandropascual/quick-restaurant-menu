@@ -7,7 +7,7 @@ do_action('erm_menu_before_title_display', $post_id);
 global $post;
 if ( $post->ID != $menu_post->ID ) {
 	?>
-	<h1 class="erm_title"><?php echo $menu_post->post_title; ?></h1>
+	<h1 class="erm_title"><?php echo esc_html($menu_post->post_title); ?></h1>
 	<div class="erm_desc"><?php echo do_shortcode($menu_post->post_content); ?></div>
 	<?php
 }

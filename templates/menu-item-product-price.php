@@ -9,8 +9,8 @@
 		<div class="erm_product_list_prices">
 			<?php foreach( $prices as $price ) { ?>
 				<div class="erm_product_list_price">
-					<span class="price_name"><?php echo $price['name']; ?></span>
-					<span class="price_price"><?php echo apply_filters('erm_filter_price', $price['value'], $item_id); ?></span>
+					<span class="price_name"><?php echo esc_html($price['name']); ?></span>
+					<span class="price_price"><?php echo apply_filters('erm_filter_price', esc_html($price['value']), $item_id); ?></span>
 				</div>
 			<?php } ?>
 		</div>

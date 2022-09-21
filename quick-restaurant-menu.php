@@ -5,7 +5,7 @@
  * Description: Create Restaurants Menus
  * Author: ThingsForRestaurants
  * Author URI: http://thingsforrestaurants.com
- * Version: 2.0.0
+ * Version: 2.0.1
  * Text Domain: erm
  * Domain Path: languages
  *
@@ -25,7 +25,7 @@
  * @package ERM
  * @category Core
  * @author Alejandro Pascual
- * @version 2.0.0
+ * @version 2.0.1
  */
 
 // Exit if accessed directly
@@ -124,7 +124,7 @@ if ( ! class_exists( 'Quick_Restaurant_Menu' ) ) :
 
 			// Version
 			if ( ! defined( 'ERM_VERSION' ) ) {
-				define( 'ERM_VERSION', '2.0.0' );
+				define( 'ERM_VERSION', '2.0.1' );
 			}
 
 			// Name for Setting
@@ -155,6 +155,7 @@ if ( ! class_exists( 'Quick_Restaurant_Menu' ) ) :
 				require_once ERM_PLUGIN_DIR . 'includes/admin/sanitize-functions.php';
 				require_once ERM_PLUGIN_DIR . 'includes/admin/ajax-functions.php';
 				require_once ERM_PLUGIN_DIR . 'includes/admin/actions.php';
+				require_once ERM_PLUGIN_DIR . 'includes/admin/scripts-admin.php';
 				require_once ERM_PLUGIN_DIR . 'includes/admin/settings/menu-settings.php';
 				require_once ERM_PLUGIN_DIR . 'includes/admin/erm_menu/ERM_menu_Admin.php';
 				require_once ERM_PLUGIN_DIR . 'includes/admin/erm_menu_item/ERM_menu_item_Admin.php';

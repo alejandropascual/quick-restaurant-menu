@@ -59,7 +59,10 @@
         <!-- description -->
         <div class="flex flex-col gap-2">
           <label>{{ __('Description') }}</label>
-          <textarea v-model="description" type="text" class="p-2 border-slate-400 border rounded md" rows="5"></textarea>
+          <!-- textarea v-model="description" type="text" class="p-2 border-slate-400 border rounded md" rows="5"></textarea -->
+          <div class="border-slate-200 border">
+            <TinyMceEditor :content="description" ref="tinymce"/>
+          </div>
         </div>
       </div>
 
@@ -93,7 +96,9 @@
 </template>
 
 <script>
+import TinyMceEditor from "./TinyMceEditor.vue";
 export default {
+  components: {TinyMceEditor},
   emits: ['cancel', 'save'],
 
   props: {
@@ -208,16 +213,20 @@ export default {
 
     save(){
       var self = this
+
+      let toSave = {
+        id: this.id,
+        type: this.type,
+        visible: this.visible,
+        image: this.image,
+        title: this.title,
+        //description: this.description,
+        description: this.$refs.tinymce.getContent(),
+        prices: this.prices
+      }
+
       this.ajaxUpdateItem(() => {
-        self.$emit('save', {
-          id: this.id,
-          type: this.type,
-          visible: this.visible,
-          image: this.image,
-          title: this.title,
-          description: this.description,
-          prices: this.prices
-        })
+        self.$emit('save', toSave)
       })
     },
 
@@ -249,7 +258,7 @@ export default {
         action: 'erm_update_menu_item',
         post_id: this.id,
         title: this.title,
-        content: this.description,
+        content: this.$refs.tinymce.getContent(),
         image_id: this.image ? this.image.image_id : null,
         visible: this.visible,
         prices: this.prices

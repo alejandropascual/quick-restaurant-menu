@@ -5,7 +5,7 @@ Plugin URL: http://thingsforrestaurants.com
 Requires at Least: 3.5
 Tested Up To: 6.0.2
 Tags: menu, restaurant, restaurant menu, food, drink, dining, cafe, coffee, cuisine
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 
 Create easily restaurant menus with drag and drop. Display different menus for each day of the week and for different hours in the same day.
@@ -151,6 +151,9 @@ You can use the support tab here, or visit the [plugin website](http://thingsfor
 6. Variable menu interface
 
 == Changelog ==
+
+= 2.0.1 =
+* Use tinyMCE as description editor
 
 = 2.0.0 =
 * Updated menu builder interface

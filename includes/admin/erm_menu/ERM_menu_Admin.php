@@ -53,7 +53,7 @@ class ERM_menu_Admin
 	 */
 	function columns_display( $column_name, $post_id ) {
 		if ( $column_name == 'shortcode' ) {
-			echo '[erm_menu id='.$post_id.']';
+			echo esc_html('[erm_menu id='.$post_id.']');
 		}
 	}
 
@@ -136,8 +136,7 @@ class ERM_menu_Admin
 		}
 
 		// Sanitize user input.
-		//$my_data = sanitize_text_field( $_POST['_erm_footer_menu'] );
-		$my_data = $_POST['_erm_footer_menu'];
+		$my_data = wp_kses_post($_POST['_erm_footer_menu']);
 
 		// Update the meta field in the database.
 		update_post_meta( $post_id, '_erm_footer_menu', $my_data );
